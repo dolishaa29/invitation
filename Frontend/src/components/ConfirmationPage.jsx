@@ -14,7 +14,7 @@ export default function ConfirmationPage({ name, onHome }) {
 
     setStatus('loading');
     try {
-      const url = import.meta.env.VITE_API_URL+"/api/rsvp";
+      const url = `${import.meta.env.VITE_API_URL}/api/rsvp`;
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
